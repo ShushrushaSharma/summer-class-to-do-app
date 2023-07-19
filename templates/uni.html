@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>University</title>
+</head>
+<body>
+    <h1>University</h1>
+    <ul>
+        <!-- Django template tag that initiates the loop. -->
+        {% for uni in the_uni %}
+        <!-- Django template tag that displays the name attribute of each specialization object. -->
+        <li>{{ uni.name }}</li>
+        <!-- Django template tag marks the end of the loop.-->
+        {% endfor %}
+    </ul>
+</body>
+</html>
